@@ -73,3 +73,50 @@ if isTwoNameSame {
 } else {
     print(" ---> 이름이 다르다")
 }
+
+
+
+let isJason = name2 == "Jason"
+let isMale = false
+
+let jasonAndMale = isJason && isMale
+let jasonOrMale = isJason || isMale
+
+
+//let greetingMessage : String
+//
+//if isJason {
+//    greetingMessage = "Hello Jason"
+//} else {
+//    greetingMessage = "Hello Somebody"
+//}
+//
+//print("Msg: \(greetingMessage)")
+
+
+// 삼항 연산자
+let greetingMessage : String = isJason ? "Hello Jason" : "Hello Somebody"
+print("Msg: \(greetingMessage)")
+
+
+
+// ---- Scope
+
+
+var hours = 50
+let payPerHour = 10000
+var salary = 0
+
+if hours > 40 {
+    let extraHours = hours - 40
+    salary += extraHours * payPerHour * 2
+    hours -= extraHours
+    
+}
+
+salary += hours * payPerHour
+
+   // print(hours)
+
+
+
