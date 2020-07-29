@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 // ---- while
 
@@ -35,3 +36,41 @@ repeat {
     print(i)
     i += 1
 } while i < 10
+
+
+// ---- For Loop
+
+
+let closedRange = 0...10  //    0부터 10까지
+let halfClosedRange = 0..<10 // 0부터 9까지
+
+var sum = 0
+var sum2 = 0
+
+
+for i in closedRange {
+    print("----> \(i)")
+    sum += i
+}
+print("----> total sum : \(sum)")
+
+print()
+
+for i in halfClosedRange {
+    print("----> \(i)")
+    sum2 += i
+}
+print("----> total sum: \(sum2)")
+
+
+var sinValue: CGFloat = 0
+
+for i in closedRange {
+    sinValue = sin(CGFloat.pi/4 * CGFloat(i))
+}
+
+let name = "Junmin"
+
+for _ in closedRange {
+    print("---> name: \(name)")
+}
