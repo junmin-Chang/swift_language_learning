@@ -101,3 +101,47 @@ for i in closedRange {
         print("gugu -> \(i) * \(j) = \(i * j)")
     }
 }
+
+
+// ----switch
+
+let num = 13
+switch num {
+case 0:
+    print(" ---> 0 입니다")
+case 0...10:
+    print(" ---> 0과10 사이 입니다")
+case 10...20:
+    print(" ---> 10과 20 사이 입니다")
+    
+default:
+    print("i don't know!")
+}
+
+
+
+let pet = "bird"
+
+switch pet {
+case "dog", "cat":
+    print("dog 입니다")
+        case "bird":
+        print("bird 입니다")
+            
+default:
+    print("I don't know!")
+}
+
+
+
+
+
+// where과 응용
+ 
+let num2 = 23
+switch num2 {
+case _ where num2 % 2 == 0:
+    print("----> 짝수!")
+default:
+    print("----> 홀수!")
+}
